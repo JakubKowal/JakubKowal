@@ -1,149 +1,144 @@
-<!DOCTYPE html>
 <html>
-
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>SZYBKI START Z BRACKETS</title>
-        <meta name="description" content="Interaktywny poradnik szybkiego startu dla Brackets.">
-        <link rel="stylesheet" href="main.css">
-    </head>
-    <body>
-
-		<h1>SZYBKI START Z BRACKETS</h1>
-		<h2>Oto Twój przewodnik!</h2>
-		
-		<!--
-			WYKONANO PRZY UŻYCIU <3 I JAVASCRIPTU
-		-->
-		
-		<p>
-			Witaj we wczesnej wersji Brackets, edytorze open-source dla sieci nowej generacji. Jesteśmy
-			wielkimi fanami standardów i chcemy budować lepsze narzędzia dla takich języków jak JavaScript,
-			HTML i CSS oraz powiązanych z nimi technologii sieciowych. Taki był nasz skromny początek.
-		</p>
-		
-		<!--
-			CZYM JEST BRACKETS?
-		-->
-		<p>
-			<em>Patrzysz na wczesną wersję Brackets.</em>
-			Na wiele sposobów Brackets jest inny niż typowy edytor. Jedną z różnic jest to, że edytor ten
-			został napisany w języku JavaScript. Tak więc, mimo iż może on nie być jeszcze gotowy do
-			codziennego użytku, my używamy go codziennie, by budować Brackets.
-		</p>
-		
-		
-		<h2>Testujemy kilka nowych rzeczy</h2>
-		
-		<!--
-			POWIĄZANIE POMIĘDZY HTML, CSS i JAVASCRIPT
-		-->
-		<h3>Szybka edycja CSS i JavaScript</h3>
-		<p>
-			Podczas edycji HTMLa użyj skrótu <kbd>Cmd/Ctrl + E</kbd> aby otworzyć szybki wbudowany edytor,
-			który wyświetli wszystkie powiązane style CSS. Wykonaj modyfikacje w kodzie CSS, wciśnij <kbd>ESC</kbd>
-			i wróć do edycji HTML. Możesz również pozostawić wbudowany edytor otwarty, tak aby stał się częścią
-			edytora HTML. Jeśli wciśniesz <kbd>ESC</kbd> poza obszarem szybkiego edytora, jego wszystkie okna
-			zostaną zamknięte. Koniec z przełączaniem się pomiędzy dokumentami i byciem wyrwanym z kontekstu.
-		</p>
-		
-		<samp>
-			Chcesz go zobaczyć w akcji? Umieść kursor w tagu <!-- <samp> --> i naciśnij <kbd>Cmd/Ctrl + E</kbd>.
-			Szybki edytor CSS pojawi się nad tym tagiem. Po prawej stronie zobaczysz listę wszystkich reguł,
-			które są powiązane z tym tagiem. Przełączaj się pomiędzy regułami używając skrótu <kbd>Alt + Góra/Dół</kbd>
-			aby znaleźć ten, który chcesz edytować.
-		</samp>
-		
-		<a href="screenshots/quick-edit.png">
-			<img alt="Zrzut ekranu pokazujący szybką edycję CSS" src="screenshots/quick-edit.png" />
-		</a>
-		
-		<p>
-			Możesz użyć tego samego skrótu w kodzie JavaScript, aby zobaczyć kod funkcji, którą przywołujesz,
-			poprzez umieszczenie kursora na nazwie funkcji. W ten sam sposób możesz również otworzyć narzędzie
-			wybierania koloru. Po prostu umieść kursor na dowolnym kolorze zapisanym w formacie hex, rgb lub hsl.
-			Na razie wbudowany szybki edytor nie może być niezagnieżdżony, więc możesz używać go jedynie w "pełnowymiarowym"
-			edytorze.
-		</p>
-		
-		<!--
-			BŁYSKAWICZNY PODGLĄD
-		-->
-		<h3>Zmiany w kodzie CSS widoczne na żywo w przeglądarce</h3>
-		<p>
-			Zapewne znany Ci jest taniec w stylu "zapisz/przeładuj", który wykonywaliśmy przez ostatnie lata.
-			Dokonujesz zmian w edytorze, zapisujesz zmiany, przełączasz się do przeglądarki i odświeżasz stronę,
-			by w końcu zobaczyć rezultat Twojej pracy. Z Brackets taki taniec nie jest konieczny.
-		</p>
-		<p>
-			Brackets utworzy <em>połączenie na żywo</em> z Twoją lokalną przeglądarką i będzie jej przekazywał
-			wszelkie zmiany w CSS. Być może już dzisiaj korzystasz z podobnego rozwiązania przy użyciu narzędzi
-			w przeglądarce, jednak z Brackets nie ma potrzeby wklejania kodu CSS z powrotem do edytora. Twój kod
-			działa w przeglądarce, ale żyje w edytorze.
-		</p>
-		
-		<samp>
-			Jeśli posiadasz zainstalowaną przeglądarkę Google Chrome, możesz wypróbować to już teraz. Kliknij
-			ikonkę błyskawicy (stąd nazwa: Błyskawiczny Podgląd) w prawym górnym rogu lub naciśnij skrót
-			<kbd>Cmd/Ctrl + Alt + P</kbd>. Kiedy Błyskawiczny Podgląd zostanie włączony w dokumencie HTML,
-			wszystkie połączone z nim pliki CSS mogą być edytowane w czasie rzeczywistym. Ikona zmieni kolor
-			z szarej na złotą gdy Błyskawiczny Podgląd nawiąże połączenie z Twoją przeglądarką.
-			
-			Teraz umieść kursor na tagu <!-- <img> --> i wciśnij <kbd>Cmd/Ctrl + E</kbd> aby otworzyć zdefiniowane
-			style CSS dla tego tagu. Spróbuj zmienić rozmiar obramowania z 10px do 20px lub zmienić kolor tła
-			z "transparent" na "hotpink". Jeśli masz umieszczone okna przeglądarki i Brackets obok siebie
-			zobaczysz, że zmiany są natychmiast uwzględniane w przeglądarce. Nieźle, co?
-		</samp>
-				
-		<p class="note">
-			Na dzień dzisiejszy Błyskawiczny Podgląd działa jedynie dla plików CSS. Aktualnie pracujemy nad tym,
-			aby dodać obsługę plików HTML i JavaScript. W aktualnej wersji zmiany w plikach HTML lub JavaScript
-			są automatycznie uwzględniane w momencie zapisu. Błyskawiczny Podgląd działa jedynie z Google Chrome.
-			Pragniemy wprowadzić tą funkcję we wszystkich najważniejszych przeglądarkach i mamy nadzieję na
-			współpracę ze strony autorów tych przeglądarek, by stało się to faktem.
-		</p>
-		
-		<!--
-			DAJ ZNAĆ CO O TYM SĄDZISZ
-		-->
-		<h2>Zaangażuj się</h2>
-		<p>
-			Brackets jest projektem open-source. Web developerzy z całego świata angażują się, by budować coraz
-			to lepszy edytor kodu. Daj nam znać co o nim sądzisz, podziel się swoimi pomysłami lub dodaj coś
-			bezpośrednio do projektu.
-		</p>
-		<ul>
-			<li><a href="http://brackets.io">Brackets.io</a></li>
-			<li><a href="http://blog.brackets.io">Blog Zespołu Brackets</a></li>
-			<li><a href="http://github.com/adobe/brackets">Brackets na GitHub</a></li>
-			<li><a href="http://github.com/adobe/brackets/wiki">Brackets Wiki</a></li>
-			<li><a href="http://groups.google.com/group/brackets-dev">Developerska Lista Mailingowa Brackets</a></li>
-			<li><a href="https://twitter.com/#!/brackets">@Brackets na Twitterze</a></li>
-			<li>Czatuj z developerami Brackets na IRCu w kanale #brackets na Freenode.</li>
-		</ul>
-
-    </body>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8">
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-2">
+<title>Usain Bolt</title>
+<meta name="description" content="Bolt">
+<meta name="keywords" content="Bolt">
+<meta name="author" content="sportowiec Usain Bolt">
+<style type="text/css">
+div#container
+{
+width: 986px;
+position: relative;
+margin-top: 0px;
+margin-left: auto;
+margin-right: auto;
+text-align: left;
+}
+body
+{
+text-align: center;
+margin: 0;
+background-color: #E4E5F9;
+background-image: url(images/_bkgrnd.png);
+color: #303030;
+scrollbar-face-color: #F0F0F0;
+scrollbar-arrow-color: #000000;
+scrollbar-3dlight-color: #F0F0F0;
+scrollbar-darkshadow-color: #696969;
+scrollbar-highlight-color: #FFFFFF;
+scrollbar-shadow-color: #A0A0A0;
+scrollbar-track-color: #C8C8C8;
+}
+</style>
+<style type="text/css">
+a
+{
+color: #0000FF;
+text-decoration: underline;
+}
+a:visited
+{
+color: #800080;
+}
+a:active
+{
+color: #0000FF;
+}
+a:hover
+{
+color: #0000FF;
+text-decoration: underline;
+}
+</style>
+<style type="text/css">
+#wb_Text1 
+{
+background-color: transparent;
+border: 0px #000000 none;
+padding: 0;
+}
+#wb_Text1 div
+{
+text-align: left;
+}
+#wb_Text3 
+{
+background-color: transparent;
+border: 0px #000000 none;
+padding: 0;
+}
+#wb_Text3 div
+{
+text-align: left;
+}
+#Image1
+{
+border: 0px #000000 solid;
+}
+#wb_Text9 
+{
+background-color: transparent;
+border: 0px #000000 none;
+padding: 0;
+}
+#wb_Text9 div
+{
+text-align: center;
+}
+#wb_Text18 
+{
+background-color: transparent;
+border: 0px #000000 solid;
+padding: 0;
+}
+#wb_Text18 div
+{
+text-align: left;
+}
+#wb_Text5 
+{
+background-color: transparent;
+border: 0px #000000 solid;
+padding: 0;
+}
+#wb_Text5 div
+{
+text-align: left;
+}
+#wb_Text6 
+{
+background-color: transparent;
+border: 0px #000000 solid;
+padding: 0;
+}
+#wb_Text6 div
+{
+text-align: justify;
+}
+</style>
+</head>
+<body>
+<div id="container">
+<div id="wb_Shape1" style="position:absolute;left:21px;top:114px;width:962px;height:707px;z-index:0;">
+<img src="images/img0002.png" id="Shape1" alt="" style="border-width:0;width:962px;height:707px;"></div>
+<div id="wb_Text1" style="position:absolute;left:24px;top:60px;width:962px;height:56px;z-index:1;">
+<span style="color:#E49938;font-family:Georgia;font-size:48px;"><strong>Usain Bolt</strong></span></div>
+<div id="wb_Text3" style="position:absolute;left:48px;top:130px;width:914px;height:41px;z-index:2;">
+<span style="color:#467AA7;font-family:Georgia;font-size:35px;">Usain Bolt najszybszym człowiekiem świata</span></div>
+<div id="wb_Image1" style="position:absolute;left:48px;top:172px;width:620px;height:410px;z-index:3;">
+<img src="http://bi.gazeta.pl/im/0/6939/z6939900Q,Usain-Bolt.jpg" id="Image1" alt="" border="0" style="width:620px;height:410px;"></div>
+<div id="wb_Text9" style="position:absolute;left:34px;top:830px;width:962px;height:18px;text-align:center;z-index:4;">
+<span style="color:#707070;font-family:Georgia;font-size:15px;">Copyright © 2013 zadane</span></div>
+<div id="wb_Text18" style="position:absolute;left:607px;top:224px;width:756px;height:2px;z-index:5;">
+&nbsp;</div>
+<div id="wb_Text5" style="position:absolute;left:48px;top:594px;width:359px;height:23px;z-index:6;">
+<span style="color:#303030;font-family:Verdana;font-size:19px;"><strong>Doceniony lekkoatleta</strong></span></div>
+<div id="wb_Text6" style="position:absolute;left:48px;top:621px;width:620px;height:119px;text-align:justify;z-index:7;">
+<span style="color:#000000;font-family:Arial;font-size:15px;">Usain Bolt, najlepszy lekkoatketa w 2012 roku został doceniony jeszcze bardziej. Został on bowiem wybrany w Rio De Janeiro najlepszym sportowcem świata! Najwspanialsze jest to, że ta sztuka udała mu się po raz trzeci. Jeśli uda mu się powtórzyć sukces w przyszłości, może on zostać jednym z najwybitniejszych sportowców w historii. Na drodze stoi mu Roger Federer, który triumfował dotychczas 4 razy w plebiscycie Laureus Awards. Bolt jest to mistrz olimpijski w biegu na 100 i 200 m, obecny rekordzista świata w biegu na 100 i 200 m. Mierzy aż 195 cm wzrostu i waży około 94 kg.</span></div>
+</div>
+</body>
 </html>
-<!--
 
-    [[[[[[[[[[[[[[[      ]]]]]]]]]]]]]]]
-    [::::::::::::::      ::::::::::::::]
-    [::::::::::::::      ::::::::::::::]
-    [::::::[[[[[[[:      :]]]]]]]::::::]
-    [:::::[                      ]:::::]
-    [:::::[                      ]:::::]
-    [:::::[                      ]:::::]
-    [:::::[                      ]:::::]
-    [:::::[     CODE THE WEB     ]:::::]
-    [:::::[  http://brackets.io  ]:::::]
-    [:::::[                      ]:::::]
-    [:::::[                      ]:::::]
-    [:::::[                      ]:::::]
-    [:::::[                      ]:::::]
-    [::::::[[[[[[[:      :]]]]]]]::::::]
-    [::::::::::::::      ::::::::::::::]
-    [::::::::::::::      ::::::::::::::]
-    [[[[[[[[[[[[[[[      ]]]]]]]]]]]]]]]
-
--->
+Zobacz więcej na Brainly.pl - https://brainly.pl/zadanie/5269174#readmore
